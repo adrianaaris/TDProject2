@@ -1,0 +1,254 @@
+
+
+/*--- Base Element ---*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Slabo 27px', serif;
+line-height: 1.6;
+color: black;
+  background-color: lightgrey;
+}
+
+p,
+h1,
+h2,
+h3 {
+  text-align:center;
+}
+
+/*--- Base Layout ---*/
+
+.name {
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.main-header {
+  margin: 0 auto;
+    width: 90%;
+    display: block;
+    text-align: center;
+}
+
+.main-nav {
+  margin-right: 11%;
+}
+
+.main-nav li {
+  margin: 5px 20px;
+  background: white;
+}
+
+a {
+  color:black;
+  font-weight: bold;
+  font-size: 1em
+}
+
+a:hover {
+  background-color: lightblue;
+}
+
+a {
+text-decoration: none;
+}
+
+.profile p {
+  width: 60%;
+  text-align: center;
+  max-width: 70%;
+  margin-left: 20%;
+}
+
+.profile-pic {
+  display: block;
+margin-left: auto;
+margin-right: auto;
+  max-width: 90%;
+}
+
+.portfolio {
+display: inline-block;
+width: 100%;
+  background-color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sections img{
+display: block;
+max-width: 100%;
+margin-left: -20px;
+padding-top: 10px;
+}
+
+.sections p,
+h2 {
+margin-right: 50px;
+}
+
+li {
+  list-style: none;
+}
+
+.footer-name {
+  display: inline-block;
+  font-size: 1em;
+  float: left;
+}
+
+.back-to-top {
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 1em;
+  float: right;
+  color: black;
+  font-weight: bold;
+}
+
+.foot-nav {
+  display: none;
+}
+
+.clearfix::after {
+  content:"";
+  display: table;
+  clear:both;
+}
+
+/*--- Media Queries ---*/
+
+@media (min-width: 768px) {
+
+.main-nav li {
+  display: inline-block;
+  background: none;
+  margin-left: 3%;
+  margin-right: 6%;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.profile p {
+  float: left;
+  width: 50%;
+  margin-left: 25px
+}
+
+.profile p {
+  text-align: justify;
+}
+
+.profile-pic {
+  float: right;
+  display: inline-block;
+  margin-left: 15px;
+margin-right: 35px;
+max-width: 40%;
+margin-bottom: 5%;
+padding-top: 3%;
+}
+
+.portfolio {
+margin-left: 15px;
+}
+
+.sections li{
+display: inline-block;
+width: 43%;
+vertical-align: top;
+}
+
+.sections {
+margin: 0 -3%;
+}
+
+.sections p {
+  padding-bottom: 10%;
+}
+
+.contact {
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 15%;
+}
+
+.foot-nav {
+  display: inline-block;
+  float: right;
+}
+
+.foot-nav li {
+  display: inline;
+  padding-right: 12px;
+}
+
+.back-to-top {
+  display: none;
+}
+
+}
+
+@media (min-width: 1024px) {
+
+.name {
+  float: left;
+  padding: 10px 30px;
+  margin-left: -45px;
+
+}
+
+.main-nav {
+  float: right;
+  display: inline-block;
+  margin-right: -5%;
+  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.profile p {
+  float: left;
+  text-align: justify;
+  width: 50%;
+  padding-top: 1%;
+  margin-left: 30px;
+}
+
+.profile-pic {
+  display: inline-block;
+  float: right;
+  width: 40%;
+  margin-right: 1%;
+}
+
+.portfolio {
+margin-left: 28px;
+}
+
+.sections li{
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+
+.sections h2{
+  font-size: 14pt;
+}
+
+footer {
+  margin: 0 30px;
+}
+
+.foot-nav li{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+}
